@@ -20,6 +20,12 @@
         layout.cells("a").setText("Contacts");
         layout.cells("b").setText("Contact Details");
         layout.cells("b").setWidth(500);
+        var menu = layout.attachMenu();
+        menu.setIconsPath("icons");
+        menu.loadStruct("data/menu.xml")
+        var toolbar = layout.attachToolbar();
+        toolbar.setIconsPath("icons/");
+        toolbar.loadStruct("data/toolbar.xml");
     })
 </script>
 </body>
